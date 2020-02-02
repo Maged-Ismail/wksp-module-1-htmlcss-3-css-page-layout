@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -5,22 +6,47 @@ body {
 .container {
     display: grid;
     min-height: 100vh;
+    grid-template-areas: 
+    "n n n"
+    "a m m"
+    "a m m"
+    "a f f";
+    grid-template-rows: auto 1fr auto;
 }
 
 .nav {
     height: 50px;
     background-color: rebeccapurple;
+    grid-area: n;
 }
 
 .aside {
     background-color: forestgreen;
+    grid-area: a;
 }
 
 .main {
+    text-align: center;
+    grid-area: m;
 
 }
 
 .footer {
     height: 100px;
     background-color: midnightblue;
+    grid-area: f;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-areas:
+        "n"
+        "m"
+        "f";
+    }
+
+    .aside {
+        display: none;
+    }
 }

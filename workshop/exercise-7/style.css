@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+
+img {
+    width: 100%;
+    outline: red solid 1px;
+}
+

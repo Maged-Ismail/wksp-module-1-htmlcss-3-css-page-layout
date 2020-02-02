@@ -1,0 +1,21 @@
+body {
+    font-family: poppins;
+    margin:0;
+}
+
+nav, footer{
+    flex-direction: row;
+    background-color: rgba(24, 27, 27, 0.904);
+    color: white;
+}
+
+div, h1 {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}

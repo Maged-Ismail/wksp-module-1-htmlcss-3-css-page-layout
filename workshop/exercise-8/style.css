@@ -10,7 +10,49 @@ body {
 }
 
 .fast {
+  animation: 1s ease-in-out slideIn;
 }
 
 .cool {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px;
+  color: white;
+  background-color: rgb(5, 113, 255);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px 1px darkgray ;
+  
+}
+
+.cool:hover {
+  animation: 1s ease-in-out pop;
+  cursor: pointer;
+}
+
+@keyframes slideIn { 
+  from { 
+    transform: translateX(100%);
+    opacity:0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
