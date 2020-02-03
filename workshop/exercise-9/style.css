@@ -9,5 +9,32 @@ body {
 .nav-dropdown {
     color: #fff;
     text-decoration: none;
+    padding: 20px;
+    position: relative;
     display: inline-block;
+}
+
+.nav-dropdown:hover > .menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: rgb(11, 111, 194);
+}
+.menu {
+    display: none;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.list > li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.list > li:hover {
+    background-color: rgb(7, 75, 131);
 }
